@@ -1,7 +1,7 @@
 # 💰 ExpenseX - Full-Stack Data Dashboard
 
 ExpenseX is a premium, full-stack financial platform designed to track, analyze, and visualize personal or business expenses. It combines a **Python API** for robust data processing with a **React-SPA** for a high-performance user experience.
-demo: https://expense-tracker-mikli0ihx-shrutibedve10-3390s-projects.vercel.app
+demo: https://expense-tracker-po18a8v93-shrutibedve10-3390s-projects.vercel.app
 
 ---
 
