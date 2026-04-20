@@ -1,0 +1,16 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/outputs/
+*.pyc
+
+# Node
+frontend/node_modules/
+frontend/dist/
+.DS_Store
+
+# Environment
+.env
+
+# Project specific
+backend/data/expenses.csv
