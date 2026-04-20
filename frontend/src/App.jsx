@@ -4,8 +4,9 @@ import {
 } from 'recharts';
 import { LayoutDashboard, Plus, Trash2, Search, Filter, FileDown, CheckCircle } from 'lucide-react';
 
-const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api/expenses';
-const REPORT_URL = (import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000') + '/api/report';
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+const API_URL = `${BASE_URL}/api/expenses`;
+const REPORT_URL = `${BASE_URL}/api/report`;
 
 function App() {
   const [expenses, setExpenses] = useState([]);
