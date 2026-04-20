@@ -10,6 +10,14 @@ CORS(app)
 
 CSV_FILE = 'data/expenses.csv'
 
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({
+        "status": "online",
+        "message": "ExpenseX API is running!",
+        "endpoints": ["/api/expenses", "/api/report"]
+    })
+
 def load_data():
     if os.path.exists(CSV_FILE):
         df = pd.read_csv(CSV_FILE)
