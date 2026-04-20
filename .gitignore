@@ -13,4 +13,4 @@ frontend/dist/
 .env
 
 # Project specific
-backend/data/expenses.csv
+backend/outputs/

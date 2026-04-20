@@ -1,0 +1,21 @@
+Date,Category,Amount,Description,Type
+2024-01-01,Food,20.5,Lunch at Cafe,Expense
+2024-01-02,Transport,5.0,Bus fare,Expense
+2024-01-05,Salary,3000.0,Monthly Salary,Income
+2024-01-10,Rent,1200.0,January Rent,Expense
+2024-01-12,Food,15.0,Groceries,Expense
+2024-01-15,Entertainment,50.0,Movie tickets,Expense
+2024-01-20,Utilities,100.0,Electricity Bill,Expense
+2024-01-25,Food,30.0,Dinner,Expense
+2024-02-01,Food,22.0,Lunch,Expense
+2024-02-02,Transport,5.0,Train fare,Expense
+2024-02-05,Salary,3000.0,Monthly Salary,Income
+2024-02-10,Rent,1200.0,February Rent,Expense
+2024-02-15,Electronics,500.0,New Headphones,Expense
+2024-02-20,Utilities,110.0,Water Bill,Expense
+2026-04-20,Food,300.0,cafe,Expense
+2026-04-20,Salary,3000.0,,Income
+2026-04-20,Food,400.0,dinner,Expense
+2026-04-20,Entertainment,400.0,movie,Expense
+2026-04-20,Transport,50.0,bus,Expense
+2026-04-20,Food,300.0,,Expense
