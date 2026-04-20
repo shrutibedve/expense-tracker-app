@@ -6,9 +6,15 @@ from fpdf import FPDF
 from datetime import datetime
 
 app = Flask(__name__)
-CORS(app)
+# Enable CORS for all routes (important for Vercel -> Render communication)
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
-CSV_FILE = 'data/expenses.csv'
+# Use absolute path to ensure the app finds the data folder on Render
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CSV_FILE = os.path.join(BASE_DIR, 'data', 'expenses.csv')
+
+# Ensure the data directory exists
+os.makedirs(os.path.dirname(CSV_FILE), exist_ok=True)
 
 @app.route('/', methods=['GET'])
 def home():
