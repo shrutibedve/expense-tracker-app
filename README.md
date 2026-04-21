@@ -1,74 +1,108 @@
-# 💰 ExpenseX - Full-Stack Data Dashboard
+# 💰 ExpenseX - Premium Financial Intelligence
 
-ExpenseX is a premium, full-stack financial platform designed to track, analyze, and visualize personal or business expenses. It combines a **Python API** for robust data processing with a **React-SPA** for a high-performance user experience.
-demo: https://expense-tracker-po18a8v93-shrutibedve10-3390s-projects.vercel.app
+![ExpenseX Banner](expense_tracker_banner_1776771867328.png)
 
----
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![React](https://img.shields.io/badge/React-19.0-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-## 🚀 Advanced Features
+**ExpenseX** is a cutting-edge, full-stack financial dashboard designed to track, analyze, and visualize spending patterns with precision. It features a high-performance **React frontend** and a robust **Python/Flask backend**, perfectly balanced for performance and scale.
 
-### 🌐 Smart Web App (React)
-- **Full CRUD Support**: Add and delete transactions with instant UI feedback.
-- **Real-Time Search**: Instantly find specific transactions by description.
-- **Category Filtering**: Drill down into specific spending areas like Rent, Food, or Salaries.
-- **Glassmorphism UI**: A technical, modern dark-mode design with blurred surfaces.
-
-### 📊 Python Backend & Analytics
-- **REST API (Flask)**: Serves live data from CSV and handles persistence.
-- **Analytical Dashboard (Streamlit)**: Deep-dive statistical charts and monthly trend analysis.
-- **PDF Export**: Generate professional financial reports with the click of a button.
-- **Currency Support**: Fully localized for the **Indian Rupee (₹)**.
+🔗 **Live Demo:** [View Live App](https://expense-tracker-po18a8v93-shrutibedve10-3390s-projects.vercel.app)
 
 ---
 
-## 🛠 Tech Stack
+## ✨ Core Features
 
-| Layer | Tools |
-| :--- | :--- |
-| **Frontend** | React (Vite), Recharts, Lucide Icons |
-| **Backend** | Python, Flask, Pandas, FPDF2 |
-| **Dashboard** | Streamlit, Matplotlib |
-| **Data** | Flat-File (CSV), soon-to-be SQL |
+### 🌐 Sophisticated Web Interface (React)
+- **Glassmorphism UI**: A premium dark-mode experience with blurred surfaces and vibrant gradients.
+- **Full CRUD Support**: Instant transaction adding and deletion with real-time UI updates.
+- **Advanced Filtering**: Search and filter records by category (Food, Rent, Salary, etc.) or description.
+- **Responsive Visuals**: Interactive data visualization powered by **Recharts**.
+
+### 📊 Python Intelligence & Analytics
+- **RESTful API**: A Flask-powered backend serving structured financial data.
+- **Analytics Dashboard**: A dedicated **Streamlit** app for deep statistical insights.
+- **Professional PDF Reports**: One-click generation of beautifully formatted financial statements.
+- **Localized for India**: Full support for the **Indian Rupee (₹)** currency format.
+
+---
+
+## 🏗️ Technical Architecture
+
+```mermaid
+graph LR
+    A[React Frontend] -- API Requests --> B[Flask API]
+    B -- Read/Write --> C[(expenses.csv)]
+    D[Streamlit Dashboard] -- Analysis --> C
+    B -- Generate --> E[PDF Reports]
+```
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-Expense-Tracker-App/
+expense-tracker-app/
 ├── backend/
-│   ├── data/            # Local data storage
-│   ├── main.py          # Data Science logic
-│   ├── api.py           # REST API Server
-│   ├── app.py           # Streamlit Web App
-│   └── outputs/         # Generated PDF reports
+│   ├── data/            # Persistence layer (CSV)
+│   ├── api.py           # Flask REST API
+│   ├── app.py           # Streamlit Analytics app
+│   ├── outputs/         # Generated reports
+│   └── requirements.txt # Python dependencies
 ├── frontend/
-│   ├── src/             # Premium React source
-│   └── dist/            # Production build
+│   ├── src/             # Premium React components
+│   ├── public/          # Static assets
+│   └── package.json     # Node dependencies
 └── README.md
 ```
 
 ---
 
-## ⚙️ How to Run Locally
+## ⚙️ Local Development
 
 ### 1. API Server (Required)
 ```powershell
 cd backend
+python -m venv venv
 .\venv\Scripts\activate
+pip install -r requirements.txt
 python api.py
 ```
 
-### 2. Frontend (The UI)
+### 2. Frontend Dashboard
 ```powershell
 cd frontend
 npm install
 npm run dev
 ```
 
-### 3. Analytics (Optional)
+### 3. Analytics Helper (Optional)
 ```powershell
 cd backend
 .\venv\Scripts\activate
 streamlit run app.py
 ```
+
+---
+
+## 🚀 Cloud Deployment
+
+### Backend (Render)
+1. Create a new **Web Service** on Render.
+2. Connect this repository.
+3. **Build Command:** `pip install -r requirements.txt`
+4. **Start Command:** `gunicorn api:app`
+
+### Frontend (Vercel)
+1. Create a new project on Vercel.
+2. Add an **Environment Variable**: `VITE_API_BASE_URL` = `https://your-render-app.onrender.com`.
+3. Deploy!
+
+---
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Developed with ❤️ by [Shruti Bedve](https://github.com/shrutibedve)
