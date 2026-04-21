@@ -1,11 +1,6 @@
 # 💰 ExpenseX - Premium Financial Intelligence
 
-![ExpenseX Banner](expense_tracker_banner_1776771867328.png)
 
-[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![React](https://img.shields.io/badge/React-19.0-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 **ExpenseX** is a cutting-edge, full-stack financial dashboard designed to track, analyze, and visualize spending patterns with precision. It features a high-performance **React frontend** and a robust **Python/Flask backend**, perfectly balanced for performance and scale.
 
