@@ -4,7 +4,7 @@
 
 **ExpenseX** is a cutting-edge, full-stack financial dashboard designed to track, analyze, and visualize spending patterns with precision. It features a high-performance **React frontend** and a robust **Python/Flask backend**, perfectly balanced for performance and scale.
 
-🔗 **Live Demo:** [View Live App](https://expense-tracker-po18a8v93-shrutibedve10-3390s-projects.vercel.app)
+🔗 **Live Demo:** [View Live App](https://expense-tracker-app-seven-mauve.vercel.app)
 
 ---
 
