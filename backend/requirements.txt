@@ -7,3 +7,6 @@ flask
 flask-cors
 fpdf2
 gunicorn
+pymongo[srv]
+python-dotenv
+

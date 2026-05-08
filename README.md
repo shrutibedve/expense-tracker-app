@@ -85,10 +85,13 @@ streamlit run app.py
 ## 🚀 Cloud Deployment
 
 ### Backend (Render)
-1. Create a new **Web Service** on Render.
-2. Connect this repository.
-3. **Build Command:** `pip install -r requirements.txt`
-4. **Start Command:** `gunicorn api:app`
+1. Create a free cluster on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) and get your `Connection String`.
+2. Create a new **Web Service** on Render.
+3. Connect this repository.
+4. **Environment Variables**:
+   - `MONGO_URI`: Your MongoDB Connection String.
+5. **Build Command:** `pip install -r requirements.txt`
+6. **Start Command:** `gunicorn api:app`
 
 ### Frontend (Vercel)
 1. Create a new project on Vercel.
